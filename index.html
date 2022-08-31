@@ -38,17 +38,15 @@
             return Math.random() * (mx - mn) + mn;
         }
          
-        function display_image(src, id) {
+        function display_image(src) {
             var a = document.createElement("img");
             a.src = src;
-            a.id = id
             document.body.appendChild(a);
         }
         function gen_img() {
             let nbr = arr[Math.floor(random(1, 1000))-1];
             const url ="https://vertylo.github.io/wakassets/monsters/" + nbr
-            //document.write(url)
-            display_image(url,1);
+            display_image(url);
         }
         
     </script>
